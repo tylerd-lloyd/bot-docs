@@ -24,7 +24,7 @@ The direct line app service extension allows clients to connect directly with th
 The direct line app service extension adds a new set of streaming extensions to the Bot Framework protocol, which replace HTTP for exchanging messages with a transport that allows bidirectional requests to be sent over a **persistent WebSocket**.
 
 Before streaming extensions, the Direct Line API offered one way for a client to send Activities to Direct Line and two ways for a client to retrieve Activities from Direct Line. The messages were sent via an HTTP POST, and received by either an HTTP GET (polling) or by opening a WebSocket to receive ActivitySets.
-Streaming extensions expand on the use of the WebSocket an allows **all messaging communication** to be sent on that WebSocket. Streaming extensions can also be used between channel services and the bot.
+Streaming extensions expand on the use of the WebSocket and allows **all messaging communication** to be sent on that WebSocket. Streaming extensions can also be used between channel services and the bot.
 
 The direct line app service extension is pre-installed on all instances of Azure App Services in every data center around the world. It is maintained and managed by Microsoft without additional deployment work for the customer. It is disabled on Azure App Services by default, but it can be easily turned on so that it can connect to your hosted bot.
 
